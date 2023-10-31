@@ -24,7 +24,6 @@
     <Compile Include="Framework_of_Protoype.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="background.jpg" />
     <Content Include="CClogo.png" />
     <Content Include="Service1.jpg" />
     <Content Include="service2.jpg" />
