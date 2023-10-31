@@ -24,12 +24,16 @@
     <Compile Include="Framework_of_Protoype.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="background.jpg" />
     <Content Include="CClogo.png" />
     <Content Include="Service1.jpg" />
     <Content Include="service2.jpg" />
+    <Content Include="service3.jpg" />
+    <Content Include="service4.jpg" />
     <Content Include="venueA.jpg" />
     <Content Include="venueB.jpg" />
     <Content Include="venueC.jpg" />
+    <Content Include="venueD.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
