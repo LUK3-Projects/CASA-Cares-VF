@@ -13,6 +13,13 @@ To follow project guidelines app has shifted from Procedural paradigm to OOP par
 1. login function: Username: Admin   Password: password1
 2. Venues tab: display all venues within our placeholder DB (static library). 
 3. Service tab: display all services within our placeholder DB (static library).
-4. Search Tool: search the placeholder DB for venues and services that match the inputted project parameters. 
+4. Search Tool: search the placeholder DB for venues and services that match the inputted project parameters:
+5.   Parameters are as followed:
+6.   Venues: Maximum Budget (Funds to rent venue), Estimated Attendees (Maximum value of possible attendees), Desired Location (Desired city within Quebec)
+7.   Services: Maximum Budget (Funds to hire services), Estimated Attendees (Maximum value of possible attendees), Desired location (Desired city within Quebec), Service Type (Type of service you want to hire).
 
-Note: tkinter GUI removed and opted to keep it simple with a terminal interface. 
+NOTES: 
+1. Parameters: Locations available: Montreal, Quebec City, Laval.
+                Service types available: Catering, Music.
+
+2. tkinter GUI removed and opted to keep it simple with a terminal interface. 
