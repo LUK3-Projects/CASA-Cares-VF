@@ -53,7 +53,8 @@ class MyApp:
                 break
             else:
                 print("Invalid choice. Please try again.")
-    #defining service class
+
+    #Defining Service Class
     def services_page(self):
         print("Welcome to the Services page!\n")
         for service in self.services:
@@ -63,7 +64,18 @@ class MyApp:
             print(f"Maximum Attendees: {service['max_attendees']}")
             print(f"Service Type: {service['service_type']}")
             print(f"Phone Number: {service['phone']}\n")
-    #defining search function
+
+      #Defining Venue Class
+    def venues_page(self):
+        print("Welcome to the Venues page!\n")
+        for venue in self.venues:
+            print(f"Name: {venue['name']}")
+            print(f"Location: {venue['location']}")
+            print(f"Cost: ${venue['cost']}")
+            print(f"Maximum Capacity: {venue['max_capacity']}")
+            print(f"Phone Number: {venue['phone']}\n")
+
+    #Defining Search Tool Function
     def search_tool_page(self):
         print("Welcome to the Search Tool page!\n")
         choice = input("Search for (1) Venue or (2) Service? Enter 1 or 2: ")
@@ -106,17 +118,8 @@ class MyApp:
                 print(f"Name: {service['name']}, Location: {service['location']}, Cost: ${service['cost']}, Max Attendees: {service['max_attendees']}, Type: {service['service_type']}")
         else:
             print("No matching services found.")
-        #defining venue class
-    def venues_page(self):
-        print("Welcome to the Venues page!\n")
-        for venue in self.venues:
-            print(f"Name: {venue['name']}")
-            print(f"Location: {venue['location']}")
-            print(f"Cost: ${venue['cost']}")
-            print(f"Maximum Capacity: {venue['max_capacity']}")
-            print(f"Phone Number: {venue['phone']}\n")
 
-# Running the app
+# Run App
 app = MyApp()
 app.start()
 
