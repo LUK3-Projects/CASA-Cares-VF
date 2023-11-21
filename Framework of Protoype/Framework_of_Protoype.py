@@ -54,7 +54,7 @@ class MyApp:
             else:
                 print("Invalid choice. Please try again.")
 
-    #Defining Service Class
+    #Defining Service attribute to show state of object
     def services_page(self):
         print("Welcome to the Services page!\n")
         for service in self.services:
@@ -65,7 +65,7 @@ class MyApp:
             print(f"Service Type: {service['service_type']}")
             print(f"Phone Number: {service['phone']}\n")
 
-      #Defining Venue Class
+      #Defining Venue attribute to show state of object
     def venues_page(self):
         print("Welcome to the Venues page!\n")
         for venue in self.venues:
