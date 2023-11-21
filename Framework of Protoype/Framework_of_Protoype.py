@@ -88,9 +88,9 @@ class MyApp:
             print("Invalid choice. Please try again.")
 
     def search_venue(self):
-        budget = float(input("Enter your budget for the venue: "))
-        attendees = int(input("Enter estimated number of attendees: "))
-        location = input("Enter the desired location (leave blank for all locations): ")
+        budget = float(input("Enter your maximum budget for the venue: "))
+        attendees = int(input("Enter the estimated max number of attendees: "))
+        location = input("Enter the desired city in Quebec (leave blank for all locations): ")
 
         matches = [venue for venue in self.venues if venue['cost'] <= budget 
                    and venue['max_capacity'] >= attendees 
@@ -105,12 +105,14 @@ class MyApp:
 
     def search_service(self):
         budget = float(input("Enter your budget for the service: "))
-        attendees = int(input("Enter estimated number of attendees: "))
-        location = input("Enter the desired location (leave blank for all locations): ")
+        attendees = int(input("Enter the estimated max number of attendees: "))
+        location = input("Enter the desired city in Quebec (leave blank for all locations): ")
+        service_type = input("Enter the type of service (leave blank for all types): ")
 
         matches = [service for service in self.services if service['cost'] <= budget 
                    and service['max_attendees'] >= attendees 
-                   and (location.lower() in service['location'].lower() or not location)]
+                   and (location.lower() in service['location'].lower() or not location)
+                   and (service_type.lower() in service['service_type'].lower() or not service_type)]
 
         if matches:
             print("\nMatching Services:")
